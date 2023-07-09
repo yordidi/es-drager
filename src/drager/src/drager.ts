@@ -101,7 +101,7 @@ export const getCursor = (rotateAngle: number, d: string) => {
   const newIndex = (index + increment) % 8
   return cursorDirectionArray[ newIndex ]
 }
-
+// 生成dots， angle是什么意思？
 export const getDotList = (angle: number = 0) => {
   let dots = []
   for (let index = 0; index < cursorDirectionArray.length; index++) {
