@@ -26,7 +26,7 @@ const props = defineProps({
     required: true
   }
 })
-
+// emit用来做什么呢？ 触发回调。也就是说父组件是订阅了这些事件的
 const emit = defineEmits(['update:modelValue', 'rotate', 'rotate-start', 'rotate-end'])
 
 const rotateRef = ref<HTMLElement | null>(null)
