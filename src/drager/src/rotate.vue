@@ -30,6 +30,7 @@ const props = defineProps({
 const emit = defineEmits(['update:modelValue', 'rotate', 'rotate-start', 'rotate-end'])
 
 const rotateRef = ref<HTMLElement | null>(null)
+  // computed，按照vue管理，应该是深度响应式
 const angle = computed({
   get: () => props.modelValue,
   set: (val) => {
