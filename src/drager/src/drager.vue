@@ -63,7 +63,7 @@ const dragRef = ref<HTMLElement | null>(null)
 const { selected, dragData, isMousedown } = useDrager(dragRef, props, emitFn)
 
 const dotList = ref(getDotList())
-
+// 果然，computed产生一个dragStyle，调整元素位置
 const dragStyle = computed(() => {
   const { width, height, left, top, angle } = dragData.value
   return {
